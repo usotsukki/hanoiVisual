@@ -1,0 +1,121 @@
+:root {
+	--dark: #141e26;
+	--light: #c5d3d9;
+	--c1: #213140;
+	--c2: #278c70;
+}
+html {
+	min-height: 100vh;
+	width: 100vw;
+	font-family: Helvetica, sans-serif;
+	color: var(--light);
+	font-size: 16px;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--dark);
+}
+.container {
+	width: 90vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title {
+	font-size: 32px;
+	font-weight: 600;
+}
+.input-h {
+	margin: 25px;
+	display: flex;
+	align-items: center;
+}
+.input-h input {
+	background-color: var(--c1);
+	border: 3px solid var(--c2);
+	color: var(--light);
+	font-size: 24px;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	margin: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+.input-h input:focus {
+	box-shadow: 0px 0px 20px 2px var(--light);
+	border: 3px solid var(--light);
+}
+.input-h label {
+	font-size: 18px;
+}
+.btn-h {
+	background-color: #278c70a1;
+	width: 120px;
+	height: 50px;
+	margin: 10px;
+	border: 3px solid var(--light);
+	color: var(--light);
+	font-size: 24px;
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 0px 10px 1px var(--c2);
+	border-radius: 5px;
+	outline: none;
+}
+.btn-h:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 20px 1px var(--light);
+}
+.btn-h:focus {
+	transform: scale(1);
+	box-shadow: 0px 0px 10px 1px var(--light);
+}
+.inv {
+	background-color: var(--c1);
+	color: var(--light);
+	box-shadow: 0px 0px 10px 1px var(--c2);
+	opacity: 0.8;
+}
+.inv:hover {
+	box-shadow: 0px 0px 20px 1px var(--c2);
+}
+
+.inv-focus {
+	box-shadow: 0px 0px 10px 1px var(--c2);
+}
+
+.towers {
+	display: flex;
+	width: 50vw;
+	justify-content: space-between;
+	align-items: center;
+}
+.tower {
+	width: 25px;
+	height: 200px;
+	background-color: #278c7099;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	padding: 5px;
+}
+.layer {
+	opacity: 1;
+	width: 120px;
+	height: 25px;
+	background-color: red;
+	border-radius: 25px;
+	position: relative;
+}
+.d-none {
+	display: none;
+}
