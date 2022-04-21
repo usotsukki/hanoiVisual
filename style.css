@@ -179,3 +179,24 @@ b {
 	transform: translateX(-130px);
 	opacity: 0;
 }
+
+@media (max-width: 50rem) {
+	body {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.title {
+		font-size: 24px;
+		text-align: center;
+	}
+	.tower {
+		width: 20px;
+	}
+	.towers {
+		width: 50vw;
+	}
+}
