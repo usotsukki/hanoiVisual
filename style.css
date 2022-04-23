@@ -118,6 +118,7 @@ body {
 	max-width: 600px;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 100px;
 }
 .tower {
 	width: 25px;
@@ -146,8 +147,9 @@ body {
 	opacity: 0;
 }
 .desc {
-	margin-top: 100px;
 	width: 80vw;
+	margin-bottom: 100px;
+	transition: all 0.8s ease-in-out;
 }
 .desc p,
 b {
@@ -199,4 +201,14 @@ b {
 	.towers {
 		width: 50vw;
 	}
+}
+.learn-more {
+	text-decoration: underline;
+	opacity: 0.6;
+	transition: all 0.2s ease-in-out;
+	margin: 20px;
+	cursor: pointer;
+}
+.learn-more:hover {
+	opacity: 1;
 }
